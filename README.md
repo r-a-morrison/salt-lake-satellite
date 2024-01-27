@@ -43,6 +43,8 @@ Grid Cell Size Thermal:	30.00
 
 https://deploy-preview-2028--gis-utah-gov.netlify.app/data/elevation-and-terrain/2016-lidar-gsl/
 
+https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-water-level-2016/about
+
 Collection Start: 9/3/2016 
 
 Collection End: 11/18/2016
