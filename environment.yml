@@ -1,4 +1,4 @@
-name: cc_geology_env
+name: salt_lake_env
 channels:
  - conda-forge
 dependencies:

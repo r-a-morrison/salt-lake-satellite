@@ -4,4 +4,4 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.abspath('..'))
 
-DATA_DIR = Path('cc_geology/tests/data')
+DATA_DIR = Path('salt_lake/tests/data')
