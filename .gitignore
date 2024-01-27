@@ -1,0 +1,73 @@
+# This file tells git to not sync binary files. Binary files are a
+# hassle with merge conflicts, and we don't need them on the github
+# repository anyway.
+
+# VSCode settings
+.vscode
+
+#Ignore trash dotfiles.
+*.DS_store
+
+# Jupiter notebooks are a mess with git
+*.ipynb
+
+# Latex intermediate files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.ent
+*.fdb_latexmk
+*.fls
+*.gz
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nlo
+*.log
+*.run.xml
+*.swp
+*.toc
+
+# Common image files
+*.jp*g
+*.gif
+*.tif*
+*.png
+*.eps
+*.svg
+*.bmp
+*.hdr
+
+# Movies and audio
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+
+# Non-text based documents
+*.ppt*
+*.doc*
+*.xsl*
+*.numbers
+*.pages
+*.key
+*.pdf
+*.ai
+
+# iPy code
+.ipynb
+*.pyc
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+**/__pycache__/
+.cache
+
+# Zips and pickles. Add manually if you really want, since they won't
+# diff well.
+*.zip
+*.pkl
