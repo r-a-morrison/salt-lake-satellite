@@ -1,22 +1,53 @@
-## Project Template
+# Cottonwood Canyons Geology
 
-This is a generic repository template primarily intended for data science, but it's fairly generic and can therefore be used for many purposes.
+Rachel Morrison - 2024/01/25
 
-Thanks to Griffin Chure's repository [Reproducible Research](https://github.com/gchure/reproducible_research) for inspiration and education. Much of this repository is based Griffin's repository.
+This is a an exploratory data analysis of the geology of Big and Little Cottonwood Canyons in the Wasatch Mountain Range outside of Salt Lake City, Utah. This project aims to apply various data analysis and machine learning techniques to high spectral resolution satellite imagery from Landsat 9 to glean mineralogical insight about the canyons. The geology of the Cottonwood Canyons is well studied, so outcomes of machine learning techniques can be validated with existing geologic maps and literature, making this an excellent site for testing and learning new tools.
 
-# Outline
-* `notes`: Some simple brainstorming of objectives, ideas, and hypotheses. You may want to exclude this from GitHub.
-* `executable_code`: Where all of the executed code lives.
-    * `exploratory`: A sandbox where you keep a record of your different approaches to transformation, interpretation, cleaning, or generation of data.
-    * `processing`: Any code used to transform the data into another type should live here. This can include everything from parsing of text data, image segmentation/filtering, or simulations.
-    * `analysis`: Code that draws conclusions from a data set (be it from an experiment, data scraping, or compiled data collection). Analysis may include regression, dimensionality reduction, or calculation of various quantities.
-    * `figure_generation`: Any code used to generate figures for your finished work, presentations, or for any other use.
-    * It may be preferable to include additional folders here as needed, e.g. `model_training`, `model_testing`, etc.
-* `module_code`: Custom code you’ve written that is not executed directly but is called from files in the code directory. If you’ve written your code in Python, for example, this can be the root folder for your custom software module or simply house a file with all of your functions.
-* `tests`: All test suites for your code. Any custom code you’ve written should be thoroughly and adequately tested to make sure you know how it is working.
-* `raw_data`: Small (< 50 MB) raw data sets, or links to where large data sets are stored. Can be useful to have a ”master” data set separate from processed data to avoid overwriting initial data.
-* `processed_data`: Cleaned data sets as well as any other processed data. This directory houses all small (< 50 MB) data sets. This is not a place to store all of your large (> 50 MB) data files, such as images. For accessibility of these large data sets, there are myriad online data repositories such as Zenodo which provide free storage and DOI generation. In addition, you should have all of your data backed up locally with redundancy.
-* `figures`: Output figures stored here, not with code.
-* `documents`: Final presentable files and LaTeX, etc. used to create documentation
-* `LICENSE`: A legal protection of your work. It is important to think deeply about the licensing of your work, and is not a decision to be made lightly. See this useful site for more information about licensing and choosing the correct license for your project.
-* `README.md`: A descriptive yet succinct description of your research project and information regarding the structure outlined below. Include software information, computing environment, and dependencies. Also include license information.
+## Outline
+
+* `01_notes`: Brainstorming of objectives, ideas, and hypotheses
+* `02_executable_code`: Where all of the executed code lives
+    * `00_exploratoration`: A sandbox for testing different approaches to cleaning, transformation, interpretation, etc.
+    * `01_data_collection`: Any code needed for pulling data from APIs
+    * `02_data_cleaning`: Any code used in preliminary cleaning and processing of data lives here.
+    * `03_analysis`: Code that draws conclusions from a data set including regression, machine learning models, or calculation of various quantities
+    * `04_figure_generation`: Code used to generate figures. Lives separate from analysis
+* `03_raw_data`: Small (< 50 MB) raw data sets, or links to where large data sets are stored. Raw data is kept separate from processed data to avoid overwriting initial data.
+* `04_processed_data`: Cleaned data sets as well as any other processed data. This directory houses all small (< 50 MB) data sets.
+* `05_figures`: Output figures are stored here, not with code.
+* `06_documents`: Final presentable files and HTML/LaTeX, etc. used to create documentation
+* `cc_canyon`: Custom code package for functions called from files in the code directory. Includes code tests.
+
+## Input Data
+
+### Landsat 9 Level 1 Data of Salt Lake Region on 2022-08-29
+
+Downloaded at https://earthexplorer.usgs.gov/
+
+ID: LC09_L1TP_038032_20220829_20230331_02_T1
+
+Landsat Scene Identifier: LC90380322022241LGN01
+
+Collection Category:	T1
+Collection Number:	2
+WRS Path:	038
+WRS Row:	032
+
+Product Map Projection L1:	UTM
+UTM Zone:	12
+Datum:	WGS84
+Ellipsoid:	WGS84
+Grid Cell Size Panchromatic:	15.00
+Grid Cell Size Reflective:	30.00
+Grid Cell Size Thermal:	30.00
+
+### Geologic map of the Salt Lake City
+
+Downloaded at https://doi.org/10.34191/M-190dm
+
+Geologic map of the Salt Lake City 30' x 60' quadrangle, north-central Utah and Uinta County, Wyoming (M-190DM)
+
+Publish Date: 2003
+
+Map Scale: 1:100,000

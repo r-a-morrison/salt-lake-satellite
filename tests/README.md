@@ -1,1 +1,0 @@
-All test suites for your code. Any custom code you’ve written should be thoroughly and adequately tested to make sure you know how it is working.

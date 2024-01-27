@@ -8,6 +8,10 @@
 #Ignore trash dotfiles.
 *.DS_store
 
+# Data
+03_raw_data/
+04_processed_data/
+
 # Jupiter notebooks are a mess with git
 *.ipynb
 
@@ -67,7 +71,7 @@ __pycache__/
 **/__pycache__/
 .cache
 
-# Zips and pickles. Add manually if you really want, since they won't
-# diff well.
+# Zips and pickles
 *.zip
 *.pkl
+*.p

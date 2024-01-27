@@ -1,1 +1,0 @@
-Some simple brainstorming of objectives, ideas, and hypotheses. You may want to exclude this from GitHub.

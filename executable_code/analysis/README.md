@@ -1,1 +1,0 @@
-Code that draws conclusions from a data set (be it from an experiment, data scraping, or compiled data collection). Analysis may include regression, dimensionality reduction, or calculation of various quantities.
