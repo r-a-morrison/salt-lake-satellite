@@ -1,5 +1,7 @@
 # Great Salt Lake Satellite Data Exploration
 
+NOTE: Project in Progress
+
 Rachel Morrison - 2024/01/25
 
 This is a an exploratory data analysis of the historical water fill of the Great Salt Lake, Utah. This project aims to apply various data analysis and machine learning techniques to high spectral resolution satellite imagery from Landsat 9 to glean insight about the historical water levels of the lake. Shapefiles from LiDar in 2016 are used as labels for training and testing of the data.
@@ -46,5 +48,4 @@ https://deploy-preview-2028--gis-utah-gov.netlify.app/data/elevation-and-terrain
 https://opendata.gis.utah.gov/datasets/utah::utah-great-salt-lake-water-level-2016/about
 
 Collection Start: 9/3/2016 
-
 Collection End: 11/18/2016
