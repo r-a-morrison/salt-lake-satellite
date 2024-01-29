@@ -4,13 +4,13 @@ NOTE: Project in Progress
 
 Rachel Morrison - 2024/01/25
 
-This is a an exploratory data analysis of the historical water fill of the Great Salt Lake, Utah. This project aims to apply various data analysis and machine learning techniques to high spectral resolution satellite imagery from Landsat 9 to glean insight about the historical water levels of the lake. Shapefiles from LiDar in 2016 are used as labels for training and testing of the data.
+This is a an exploratory data analysis of the historical water fill of the Great Salt Lake, Utah. This project aims to apply various data analysis and machine learning techniques to high spectral resolution satellite imagery from Landsat 8 & 9 to glean insight about the historical water levels of the lake. Shapefiles from LiDAR in 2016 are used as labels for training and testing of the data.
 
 ## Outline
 
 * `01_notes`: Brainstorming of objectives, ideas, and hypotheses
 * `02_executable_code`: Where all of the executed code lives
-    * `00_exploratoration`: A sandbox for testing different approaches to cleaning, transformation, interpretation, etc.
+    * `00_exploration`: A sandbox for testing different approaches to cleaning, transformation, interpretation, etc.
     * `01_data_collection`: Any code needed for pulling data from APIs
     * `02_data_cleaning`: Any code used in preliminary cleaning and processing of data lives here.
     * `03_analysis`: Code that draws conclusions from a data set including regression, machine learning models, or calculation of various quantities
