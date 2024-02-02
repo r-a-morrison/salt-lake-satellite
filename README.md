@@ -27,16 +27,17 @@ This is a an exploratory data analysis of the historical water fill of the Great
 
 Downloaded at https://earthexplorer.usgs.gov/
 
-ID: LC09_L1TP_038032_20220829_20230331_02_T1
+Collection Category:	T1 & T2
 
-Landsat Scene Identifier: LC90380322022241LGN01
-
-Collection Category:	T1
-Collection Number:	2
+Collection: 2
 
 Product Map Projection L1:	UTM
 Datum:	WGS84
 Ellipsoid:	WGS84
+
+EPSG:32612
+WGS 84 / UTM zone 12N
+
 Grid Cell Size Panchromatic:	15.00
 Grid Cell Size Reflective:	30.00
 Grid Cell Size Thermal:	30.00
