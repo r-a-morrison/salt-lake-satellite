@@ -11,6 +11,7 @@
 # Data
 03_raw_data/
 04_processed_data/
+05_figures/
 
 # Jupiter notebooks are a mess with git
 *.ipynb

@@ -1,7 +1,7 @@
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Polygon
-from salt_lake.utils.data_collection import earth_explorer
+from salt_lake_satellite.data_collection import earth_explorer
 from datetime import date
 import yaml
 
