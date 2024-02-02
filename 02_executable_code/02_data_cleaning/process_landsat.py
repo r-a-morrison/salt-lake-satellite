@@ -4,7 +4,7 @@ import pandas as pd
 import yaml
 
 # Project parameters
-config = yaml.safe_load(open('../../03_raw_data/project_config.yml'))
+config = yaml.safe_load(open('../../project_config.yml'))
 input_dir = '../../03_raw_data/Landsat/'
 extract_dir = '../../04_processed_data/01_landsat_extracted/'
 landsat_summary_file = config['landsat']['summary_file']

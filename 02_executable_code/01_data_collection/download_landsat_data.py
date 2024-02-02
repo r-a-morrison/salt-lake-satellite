@@ -5,7 +5,7 @@ from salt_lake.utils.data_collection import earth_explorer
 from datetime import date
 import yaml
 
-config = yaml.safe_load(open('03_raw_data/project_config.yml'))
+config = yaml.safe_load(open('project_config.yml'))
 
 # Import parameters for Landsat data
 project_bounds_latlon = config['project_bounds_latlon']

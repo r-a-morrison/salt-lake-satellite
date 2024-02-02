@@ -1,0 +1,21 @@
+project_bounds_latlon:
+  - - -113.42559815
+    - 41.67906622
+  - - -112.69091427
+    - 40.50542039
+  - - -111.84082032
+    - 40.80965167
+  - - -112.5755042
+    - 41.97789442
+  - - -113.42559815
+    - 41.67906622
+landsat:
+  crs: "epsg:32612"
+  # FYI: See https://github.com/yannforget/landsatxplore/tree/master for dataset IDs
+  dataset: "landsat_ot_c2_l1" # Landsat 8 & 9 Collection 2 Level 1 & 2
+  summary_file: "03_raw_data/Landsat/lansat_summary_2024-01-28.csv"
+water_level:
+  crs: "epsg:3857"
+  shapefile: "03_raw_data/Utah_Great_Salt_Lake_Water_Level_2016/GSLWaterLevel2016.shp"
+annotate_start_date: "2016-09-01"
+annotate_end_date: "2016-11-30"

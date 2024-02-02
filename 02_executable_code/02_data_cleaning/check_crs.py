@@ -3,7 +3,7 @@ import rasterio
 import geopandas as gpd
 import yaml
 
-config = yaml.safe_load(open('03_raw_data/project_config.yml'))
+config = yaml.safe_load(open('project_config.yml'))
 
 landsat_dir = '04_processed_data/01_landsat_extracted/'
 landsat_summary_file = config['landsat']['summary_file']
