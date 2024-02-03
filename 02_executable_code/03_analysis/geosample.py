@@ -9,11 +9,11 @@ from shapely.geometry import Polygon
 import geopandas as gpd
 
 # Load parameters
-config = yaml.safe_load(open('../../project_config.yml'))
+config = yaml.safe_load(open('project_config.yml'))
 landsat_crs = config['landsat']['crs']
 landsat_bands = config['landsat']['bands'] # B01-B11
-landsat_path = '../../04_processed_data/01_landsat_extracted/'
-landsat_summary_file = f"../../{config['landsat']['summary_file']}"
+landsat_path = '04_processed_data/01_landsat_extracted/'
+landsat_summary_file = f"{config['landsat']['summary_file']}"
 project_bounds_latlon = config['project_bounds']['latlon']
 project_bounds_crs = config['project_bounds']['crs']
 

@@ -13,7 +13,7 @@ landsat_crs = config['landsat']['crs']
 start_date = config['annotate_start_date']
 end_data = config['annotate_end_date']
 landsat_dataset = config['landsat']['dataset']
-output_dir = '../../03_raw_data/Landsat/'
+output_dir = '03_raw_data/Landsat/'
 
 # Transform crs of project bounds
 project_polygon = gpd.GeoDataFrame(index=[0], crs=landsat_crs, geometry=[project_bounds_latlon])
@@ -31,7 +31,7 @@ api.logout()
 
 # Display basic search results information
 scenes_df = earth_explorer.get_search_info(scenes)
-scenes_df.to_csv(f'{output_dir}/lansat_summary_{date.today()}.csv')
+scenes_df.to_csv(f'{output_dir}/lansat_summary_{date.today()}.csv', index=False)
 
 # Download results
 earth_explorer.download_data(display_ids=scenes_df['display_id'], path_dir=output_dir)
