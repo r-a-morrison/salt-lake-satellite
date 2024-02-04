@@ -38,11 +38,11 @@ train_df, test_df = train_test_split(landsat_l1tp_df,
 train_df.to_csv('04_processed_data/landsat_train.csv', index=False)
 test_df.to_csv('04_processed_data/landsat_test.csv', index=False)
 
-test_train.write_dfs_with_new_display_id(train_df,
+test_train.copy_files_with_new_display_id(train_df,
                                          source_dir=landsat_extracted_path,
                                          output_dir=train_path,
                                          bands=landsat_bands)
-test_train.write_dfs_with_new_display_id(test_df, 
+test_train.copy_files_with_new_display_id(test_df, 
                                          source_dir=landsat_extracted_path, 
                                          output_dir=test_path,
                                          bands=landsat_bands)

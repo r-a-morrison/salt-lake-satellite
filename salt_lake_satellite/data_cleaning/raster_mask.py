@@ -3,14 +3,16 @@ from rasterio.features import rasterize
 import geopandas as gpd
 
 def get_tiff_crs(tiff_path):
+    """Given a geo tiff file path, return the crs of the the file"""
+
     with rasterio.open(tiff_path, 'r') as source:
         crs = source.crs
     return str(crs).lower()
 
 def shape_to_raster(shape, raster_extent, raster_transform):
-    
-    shape_geometries = [shapes for shapes in shape.geometry]
+    """Given a set of polygon shapes, a raster extent, and a raster transform, return a raster image of the shape. A value of 1 in the returned raster denotes inside the polygon, and a value of 0 denotes outside the polygon."""
 
+    shape_geometries = [shapes for shapes in shape.geometry]
     shape_raster = rasterize(shape_geometries,
                        out_shape=raster_extent,
                        transform=raster_transform,
@@ -18,6 +20,8 @@ def shape_to_raster(shape, raster_extent, raster_transform):
     return shape_raster
 
 def shapefile_to_maskfile(shape_path, raster_path, output_path):
+    """Given a shape file path, a raster file path, and an output path, creates a raster file of the shape with the same resolution and crs as the raster file."""
+
     raster_crs = get_tiff_crs(raster_path)
 
     with rasterio.open(raster_path, 'r') as source:
