@@ -19,7 +19,7 @@ This is a an exploratory data analysis of the historical water fill of the Great
 * `04_processed_data`: (Excluded from git.) Cleaned data sets as well as any other processed data. This directory houses all small (< 50 MB) data sets.
 * `05_figures`: Output figures are stored here, not with code.
 * `06_documents`: Final presentable files and HTML/LaTeX, etc. used to create documentation
-* `cc_canyon`: Custom code package for functions called from files in the code directory. Includes code tests.
+* `salt_lake_satellite`: Custom code package for functions called from files in the code directory. Includes code tests.
 
 ## Input Data
 
