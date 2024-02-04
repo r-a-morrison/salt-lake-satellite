@@ -10,12 +10,12 @@ from salt_lake_satellite.analysis import geosample
 config = yaml.safe_load(open('project_config.yml'))
 landsat_crs = config['landsat']['crs']
 landsat_bands = config['landsat']['bands'] # B01-B11
-landsat_path = '04_processed_data/01_landsat_extracted/'
+landsat_train_path = '04_processed_data/02_landsat_train/'
 project_bounds_latlon = config['project_bounds']['latlon']
 project_bounds_crs = config['project_bounds']['crs']
 
 train_df = pd.read_csv(config['train_summary'])
-train_paths = [f"{landsat_path}{display_id}/" for display_id in train_df['display_id']]
+train_paths = [f"{landsat_train_path}{display_id}/" for display_id in train_df['display_id']]
 
 landsat_ds = Landsat8(
     paths=train_paths,
