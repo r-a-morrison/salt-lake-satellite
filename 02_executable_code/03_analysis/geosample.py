@@ -7,7 +7,7 @@ config = yaml.safe_load(open('project_config.yml'))
 landsat_crs = config['landsat']['crs']
 landsat_bands = config['landsat']['bands'] # B01-B11
 landsat_train_path = '04_processed_data/02_landsat_train/'
-mask_train_path = '../../04_processed_data/04_raster_mask_train/'
+mask_train_path = '04_processed_data/04_raster_mask_train/'
 project_bounds_latlon = config['project_bounds']['latlon']
 project_bounds_crs = config['project_bounds']['crs']
 
